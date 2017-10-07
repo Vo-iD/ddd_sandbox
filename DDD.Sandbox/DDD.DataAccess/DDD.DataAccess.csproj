@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Contracts" />
+    <Folder Include="Implementations" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DDD.Dtos\DDD.Dtos.csproj" />
+  </ItemGroup>
+</Project>
