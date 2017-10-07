@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using DDD.Sandbox.Models;
+using DDD.WebApp.Models;
 
-namespace DDD.Sandbox.Controllers
+namespace DDD.WebApp.Controllers
 {
     public class HomeController : Controller
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace DDD.Sandbox.Models
+namespace DDD.WebApp.Models
 {
     public class ErrorViewModel
     {
