@@ -12,12 +12,15 @@ pipeline {
         bat 'dotnet test DDD.Sandbox\\DDD.Application.Tests\\DDD.Application.Tests.csproj'
         bat 'dotnet test DDD.Sandbox\\DDD.Domain.Tests\\DDD.Domain.Tests.csproj'
         bat 'dotnet test DDD.Sandbox\\DDD.WebApp.Tests\\DDD.WebApp.Tests.csproj'
+        bat 'dotnet test DDD.Sandbox\\DDD.NunitTests\\DDD.NunitTests.csproj'
       }
     }
   }
   post {
-	always {
-		junit 'build/reports/**/*.xml'
-	}
+    always {
+      junit 'build/reports/**/*.xml'
+      
+    }
+    
   }
 }
