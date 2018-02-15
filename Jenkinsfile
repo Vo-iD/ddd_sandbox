@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat 'rake build'
+        bat 'dotnet restore'
+        bat 'dotnet build'
       }
     }
   }
