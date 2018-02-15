@@ -9,10 +9,10 @@ pipeline {
     }
     stage('Test') {
       steps {
-        bat 'dotnet test DDD.Sandbox\\DDD.Application.Tests\\DDD.Application.Tests.csproj --logger results\\unit_tests.xml'
-        bat 'dotnet test DDD.Sandbox\\DDD.Domain.Tests\\DDD.Domain.Tests.csproj --logger results\\unit_tests.xml'
-        bat 'dotnet test DDD.Sandbox\\DDD.WebApp.Tests\\DDD.WebApp.Tests.csproj --logger results\\unit_tests.xml'
-        bat 'dotnet test DDD.Sandbox\\DDD.NunitTests\\DDD.NunitTests.csproj --logger results\\unit_tests.xml'
+        bat 'dotnet test DDD.Sandbox\\DDD.Application.Tests\\DDD.Application.Tests.csproj --logger unit_tests.xml'
+        bat 'dotnet test DDD.Sandbox\\DDD.Domain.Tests\\DDD.Domain.Tests.csproj --logger unit_tests.xml'
+        bat 'dotnet test DDD.Sandbox\\DDD.WebApp.Tests\\DDD.WebApp.Tests.csproj --logger unit_tests.xml'
+        bat 'dotnet test DDD.Sandbox\\DDD.NunitTests\\DDD.NunitTests.csproj --logger unit_tests.xml'
       }
     }
   }
