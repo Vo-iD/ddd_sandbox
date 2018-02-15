@@ -15,7 +15,6 @@ namespace DDD.Application.Tests
         public void FailedTest()
         {
             Console.WriteLine("From failed test");
-            throw new Exception("some outer exception", new Exception("inner"));
         }
     }
 }
