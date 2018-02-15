@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat 'dotnet restore'
-        bat 'dotnet build'
+        bat 'dotnet restore DDD.Sandbox'
+        bat 'dotnet build DDD.Sandbox'
       }
     }
   }
