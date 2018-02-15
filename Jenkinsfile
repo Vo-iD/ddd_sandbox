@@ -15,4 +15,9 @@ pipeline {
       }
     }
   }
+  post {
+	always {
+		xunit 'build/reports/**/*.xml'
+	}
+  }
 }
