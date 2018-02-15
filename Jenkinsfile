@@ -7,5 +7,10 @@ pipeline {
         bat 'dotnet build DDD.Sandbox'
       }
     }
+    stage('Test') {
+      steps {
+        bat 'dotnet test DDD.Sandbox\\DDD.Application.Tests\\DDD.Application.Tests.csproj'
+      }
+    }
   }
 }
