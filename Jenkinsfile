@@ -12,6 +12,7 @@ pipeline {
         bat 'dotnet test DDD.Sandbox\\DDD.Application.Tests\\DDD.Application.Tests.csproj'
         bat 'dotnet test DDD.Sandbox\\DDD.Domain.Tests\\DDD.Domain.Tests.csproj'
         bat 'dotnet test DDD.Sandbox\\DDD.WebApp.Tests\\DDD.WebApp.Tests.csproj'
+        nunit(testResultsPattern: 'Tests', keepJUnitReports: true, skipJUnitArchiver: true)
       }
     }
   }
